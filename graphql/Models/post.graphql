@@ -1,0 +1,33 @@
+type Post {
+  id: ID!
+  name: String!
+  description: String!
+  created_at: DateTime!
+  updated_at: DateTime!
+  author: User! @belongsTo
+}
+
+#Query
+extend type Query {
+  posts: [Post!]! @paginate
+  post(id: ID! @eq): Post @find
+}
+
+#Mutation
+extend type Mutation {
+  createPost(
+    name: String!
+    description: String!
+  ): Post! @create
+  updatePost(
+    id: ID!
+    name: String
+    description: String
+  ): Post! @update
+  deletePost(id: ID! @whereKey): Post @delete
+  upsertPost(
+    id: ID!
+    name: String
+    description: String!
+  ): Post! @upsert
+}
