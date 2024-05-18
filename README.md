@@ -10,23 +10,26 @@ git clone https://github.com/maktezi/POS.git
 cd POS
 `
 
-### 3. Install Composer
+### 3. Copy the .env.example to .env then Install Composer
+`
+.env.example -> .env
+`
+&
 `
 composer install
 `
-
 ### 4. Run migrations
 `
 php artisan migrate
 `
 
-### 5. Goto frontend directory then install npm or bun
+### 5. Goto client directory then install npm or bun
+`
+cd client
+`
+
 `
 npm install
-`
-or
-`
-bun install
 `
 
 ### 6. Go back to the POS directory
@@ -37,8 +40,4 @@ cd ..
 ### 7. Then run the server
 `
  npm dev
-`
-or
-`
-bun dev
 `
