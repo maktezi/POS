@@ -3,14 +3,12 @@ import AppHeader from "~/components/AppHeader.vue";
 </script>
 
 <template>
-  <div>
     <AppHeader />
-    <AppSidebar />
-
     <FlashMessages />
-
-    <main>
-      <slot />
-    </main>
+    <div class="grid items-start lg:flex">
+<!--      <Sidebar />-->
+      <div class="p-2">
+        <slot />
+      </div>
   </div>
 </template>

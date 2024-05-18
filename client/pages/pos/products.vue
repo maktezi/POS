@@ -1,44 +1,9 @@
-<script setup lang="ts">
-import { Button } from '@/components/ui/button'
-import {
-    Table,
-    TableBody,
-    TableCaption,
-    TableCell,
-    TableHead,
-    TableHeader,
-    TableRow,
-} from '@/components/ui/table'
-
-const products = [
-    {
-        barcode: '1203901',
-        name: 'Intel Core i9',
-        stocks: 100,
-        price: '$250.00',
-    },
-    {
-        barcode: '1201231',
-        name: 'Intel Core i7',
-        stocks: 100,
-        price: '$180.00',
-    },
-    {
-        barcode: '1204561',
-        name: 'Intel Core i5',
-        stocks: 100,
-        price: '$150.00',
-    }
-]
-// definePageMeta({ middleware: ["auth"] });
-</script>
-
 <template>
     <NuxtLayout name="app-layout">
         <Head>
             <Title>POS - Products</Title>
         </Head>
-        <div class="flex m-auto items-center justify-between ml-20 mt-5 bg-gray-200 dark:bg-gray-800 mr-5 px-5 py-2 rounded-xl">
+        <div class="flex m-auto items-center justify-between ml-20 mt-5 bg-gray-200 dark:bg-gray-800 mr-5 px-5 py-1 rounded-xl">
             <p class="text-black dark:text-gray-300 text-2xl font-bold">Products</p>
             <div>
                 <Button variant="secondary" size="icon" class="rounded-full hover:bg-gray-300">
@@ -48,7 +13,7 @@ const products = [
                 </Button>
             </div>
         </div>
-        <Card class="my-4 ml-20 mr-5">
+        <Card class="w-full">
             <Table>
                 <TableHeader>
                     <TableRow>
@@ -90,3 +55,38 @@ const products = [
         </Card>
     </NuxtLayout>
 </template>
+
+<script setup lang="ts">
+import { Button } from '@/components/ui/button'
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table'
+
+const products = [
+  {
+    barcode: '1203901',
+    name: 'Intel Core i9',
+    stocks: 100,
+    price: '$250.00',
+  },
+  {
+    barcode: '1201231',
+    name: 'Intel Core i7',
+    stocks: 100,
+    price: '$180.00',
+  },
+  {
+    barcode: '1204561',
+    name: 'Intel Core i5',
+    stocks: 100,
+    price: '$150.00',
+  }
+]
+// definePageMeta({ middleware: ["auth"] });
+</script>

@@ -16,7 +16,7 @@ definePageMeta({
         <!-- Logo  -->
         <div class="flex-shrink-0 flex items-center">
             <NuxtLink to="/">
-                <ApplicationLogo />
+                <Logo />
             </NuxtLink>
             <DisplayMode />
         </div>

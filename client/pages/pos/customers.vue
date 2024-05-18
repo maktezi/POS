@@ -1,38 +1,3 @@
-<script setup lang="ts">
-import { Button } from '@/components/ui/button'
-import {
-    Table,
-    TableBody,
-    TableCaption,
-    TableCell,
-    TableHead,
-    TableHeader,
-    TableRow,
-} from '@/components/ui/table'
-
-const customers = [
-    {
-        customer_code: '120391201',
-        name: 'Yow Wan Zow',
-        points: 100,
-        is_active: false,
-    },
-    {
-        customer_code: '120112231',
-        name: 'Zuan Merks',
-        points: 100,
-        is_active: true,
-    },
-    {
-        customer_code: '120451261',
-        name: 'Juan Walow',
-        points: 100,
-        is_active: true,
-    }
-]
-// definePageMeta({ middleware: ["auth"] });
-</script>
-
 <template>
     <NuxtLayout name="app-layout">
         <Head>
@@ -48,7 +13,7 @@ const customers = [
                 </Button>
             </div>
         </div>
-        <Card class="my-4 ml-20 mr-5">
+        <Card>
             <Table>
                 <TableHeader>
                     <TableRow>
@@ -92,3 +57,38 @@ const customers = [
         </Card>
     </NuxtLayout>
 </template>
+
+<script setup lang="ts">
+import { Button } from '@/components/ui/button'
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table'
+
+const customers = [
+  {
+    customer_code: '120391201',
+    name: 'Yow Wan Zow',
+    points: 100,
+    is_active: false,
+  },
+  {
+    customer_code: '120112231',
+    name: 'Zuan Merks',
+    points: 100,
+    is_active: true,
+  },
+  {
+    customer_code: '120451261',
+    name: 'Juan Walow',
+    points: 100,
+    is_active: true,
+  }
+]
+// definePageMeta({ middleware: ["auth"] });
+</script>
