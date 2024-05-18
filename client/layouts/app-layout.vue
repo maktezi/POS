@@ -5,9 +5,8 @@ import AppHeader from "~/components/AppHeader.vue";
 <template>
     <AppHeader />
     <FlashMessages />
-    <div class="grid items-start lg:flex">
-<!--      <Sidebar />-->
-      <div class="p-2">
+    <div class="grid items-start">
+      <div class="p-8">
         <slot />
       </div>
   </div>

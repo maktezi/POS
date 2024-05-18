@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       backendUrl: "https://posnuxtbackend.freshfromuspng.com",
       frontendUrl: "https://posnuxt.vercel.app",
     },
-  },g
+  },
 
   imports: {
     dirs: ["./utils"],

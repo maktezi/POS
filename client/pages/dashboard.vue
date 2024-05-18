@@ -4,17 +4,19 @@
       <Title>POS - Dashboard</Title>
     </Head>
 
-    <Card>
-      <div class="max-w-full mx-auto sm:px-3 lg:px-8">
-        <div class="overflow-hidden shadow-sm sm:rounded-lg">
+    <main>
+      <div>
+        <p class="text-3xl font-bold">Dashboard</p>
+      </div>
+      <Card class="px-2 py-5 mt-6 w-sm">
+        <div class="flex flex-col">
+          <p>Total Sales</p>
           <div class="p-3">
-              <p class="text-black dark:text-gray-300 text-2xl font-bold">
-                  Charts
-              </p>
+            <Chart class="h-72"/>
           </div>
         </div>
-      </div>
-    </Card>
+      </Card>
+    </main>
   </NuxtLayout>
 </template>
 

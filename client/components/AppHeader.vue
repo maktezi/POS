@@ -2,20 +2,20 @@
   <nav class="bg-red-950 m-0">
     <!-- Primary Navigation Menu  -->
     <div class="max-w-full mx-auto">
-      <div class="flex justify-between h-16">
+      <div class="flex justify-between h-14">
         <div class="flex ml-5">
           <AppSidebar />
         </div>
-        <div class="flex mt-auto mb-auto ml-20 text-white font-bold text-2xl">
-          <p class="hidden lg:flex w-[250px]">
-            Point of Sales
-          </p>
-          <p class="lg:hidden sm:flex w-[100px]">
-            POS
-          </p>
-        </div>
+<!--        <div class="flex mt-auto mb-auto ml-20 text-white font-bold text-2xl">-->
+<!--          <p class="hidden lg:flex w-[250px]">-->
+<!--            Point of Sales-->
+<!--          </p>-->
+<!--          <p class="lg:hidden sm:flex w-[100px]">-->
+<!--            POS-->
+<!--          </p>-->
+<!--        </div>-->
         <!-- Settings Dropdown  -->
-        <div class="flex items-center bg-red-900 pl-10 pr-8 rounded-l-full">
+        <div class="flex items-center bg-red-900 pl-10 pr-6 rounded-l-full">
           <Dropdown class="mr-3" align="right">
             <template #trigger>
               <button
