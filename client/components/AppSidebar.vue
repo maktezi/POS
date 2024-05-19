@@ -13,8 +13,8 @@
       </DrawerHeader>
       <div class='px-4 grow mt-5'>
         <div class='grid gap-2'>
-          <NuxtLink :href="link.path" v-for='(link, index) in links' :key='index' class='flex w-full items-center gap-2 px-14 py-2 transition rounded-xl cursor-pointer hover:bg-red-800 dark:hover:bg-red-950'>
-            <Icon size='30' :name='link.icon' />
+          <NuxtLink :to="link.path" v-for='(link, index) in links' :key='index' class='flex w-full items-center gap-2 px-12 py-2 transition rounded-2xl bg-gray-200 dark:bg-gray-800 cursor-pointer hover:bg-red-500 dark:hover:bg-red-950'>
+            <Icon size='25' :name='link.icon' />
             <span>{{ link.title }}</span>
           </NuxtLink>
         </div>
@@ -26,12 +26,10 @@
 <script setup lang="ts">
 import {
   Drawer,
-  DrawerClose,
   DrawerContent,
   DrawerHeader,
   DrawerTrigger,
 } from '@/components/ui/drawer'
-import Button from '@/components/Button.vue'
 
 const links = ref([
   {

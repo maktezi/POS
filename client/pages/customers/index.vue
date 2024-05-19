@@ -61,6 +61,8 @@
 </template>
 
 <script setup lang="ts">
+// definePageMeta({ middleware: ["auth"] });
+
 import { Button } from '~/components/ui/button'
 import {
   Table,
@@ -92,5 +94,4 @@ const customers = [
     is_active: true,
   }
 ]
-// definePageMeta({ middleware: ["auth"] });
 </script>

@@ -1,29 +1,3 @@
-<script setup lang="ts">
-import {Button} from "~/components/ui/button";
-import {Label} from "~/components/ui/label";
-import {Input} from "~/components/ui/input";
-
-definePageMeta({ middleware: ["guest"] });
-
-const router = useRouter();
-const { register } = useAuth();
-
-const data = reactive({
-  name: "",
-  email: "",
-  password: "",
-  password_confirmation: "",
-});
-
-const {
-  submit,
-  inProgress,
-  validationErrors: errors,
-} = useSubmit(() => register(data), {
-  onSuccess: () => router.push("/dashboard"),
-});
-</script>
-
 <template>
     <Head>
         <Title>POS - Create Account</Title>
@@ -103,3 +77,29 @@ const {
       </Card>
   </div>
 </template>
+
+<script setup lang="ts">
+import {Button} from "~/components/ui/button";
+import {Label} from "~/components/ui/label";
+import {Input} from "~/components/ui/input";
+
+definePageMeta({ middleware: ["guest"] });
+
+const router = useRouter();
+const { register } = useAuth();
+
+const data = reactive({
+  name: "",
+  email: "",
+  password: "",
+  password_confirmation: "",
+});
+
+const {
+  submit,
+  inProgress,
+  validationErrors: errors,
+} = useSubmit(() => register(data), {
+  onSuccess: () => router.push("/dashboard"),
+});
+</script>

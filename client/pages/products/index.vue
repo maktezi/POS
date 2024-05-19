@@ -59,6 +59,8 @@
 </template>
 
 <script setup lang="ts">
+// definePageMeta({ middleware: ["auth"] });
+
 import { Button } from '~/components/ui/button'
 import {
   Table,
@@ -90,5 +92,4 @@ const products = [
     price: '$150.00',
   }
 ]
-// definePageMeta({ middleware: ["auth"] });
 </script>

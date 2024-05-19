@@ -14,11 +14,11 @@
         </TableRow>
       </TableHeader>
       <TableBody>
-        <TableRow v-for="p in products" :key="p.item">
-          <TableCell class="font-medium">{{ p.item }}</TableCell>
-          <TableCell>{{ p.price }}</TableCell>
-          <TableCell>{{ p.qty }}</TableCell>
-          <TableCell class="text-right">{{ p.amount }}</TableCell>
+        <TableRow v-for="product in products" :key="product.item">
+          <TableCell class="font-medium">{{ product.item }}</TableCell>
+          <TableCell>{{ product.price }}</TableCell>
+          <TableCell>{{ product.qty }}</TableCell>
+          <TableCell class="text-right">{{ product.amount }}</TableCell>
         </TableRow>
       </TableBody>
     </Table>

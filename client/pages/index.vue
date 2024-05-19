@@ -31,9 +31,9 @@ definePageMeta({
             <NuxtLink to="/login" class="text-sm text-gray-700 underline">
                 <Button>Login</Button>
             </NuxtLink>
-            <NuxtLink to="/register" class="ml-4 text-sm text-gray-700 underline">
-                <Button variant="secondary" >Register</Button>
-            </NuxtLink>
+<!--            <NuxtLink to="/register" class="ml-4 text-sm text-gray-700 underline">-->
+<!--                <Button variant="secondary" >Register</Button>-->
+<!--            </NuxtLink>-->
         </template>
     </div>
     <div class="flex m-auto justify-center">

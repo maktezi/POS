@@ -40,7 +40,6 @@ const forwarded = useForwardPropsEmits(props, emits)
     opacity: 1;
   }
 }
-
 .drawer-enter-active {
   animation: slide-in-left 0.5s forwards;
 }

@@ -3,7 +3,7 @@
     <!-- Primary Navigation Menu  -->
     <div class="max-w-full mx-auto">
       <div class="flex justify-between h-14">
-        <div class="flex ml-5">
+        <div class="flex ml-3">
           <AppSidebar />
         </div>
 <!--        <div class="flex mt-auto mb-auto ml-20 text-white font-bold text-2xl">-->
@@ -15,14 +15,14 @@
 <!--          </p>-->
 <!--        </div>-->
         <!-- Settings Dropdown  -->
-        <div class="flex items-center bg-red-900 pl-10 pr-6 rounded-l-full">
+        <div class="flex items-center bg-red-900 pl-6 pr-4 rounded-l-full">
           <Dropdown class="mr-3" align="right">
             <template #trigger>
               <button
-                class="flex items-center text-sm font-medium text-white hover:text-gray-700 focus:outline-none transition duration-150 ease-in-out"
+                class="flex items-center text-sm font-medium text-white hover:text-gray-700 focus:outline-none transition duration-250 ease-in-out"
               >
-                <!-- <div>{{ user?.name }}</div> -->
-                <div>admin</div>
+<!--                 <div>{{ user?.name }}</div>-->
+                <div>Super A. Admin</div>
 
                 <div class="ml-1">
                   <svg

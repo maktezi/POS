@@ -1,3 +1,75 @@
+<template>
+  <Head>
+    <Title>POS - Login</Title>
+  </Head>
+  <div class="p-5 sm:w-auto max-w-xl m-auto">
+    <Card class="w-full p-10 mt-40">
+      <!-- Session Status -->
+      <AuthSessionStatus class="mb-4" :status="status" />
+      <NuxtLink to="/">
+          <Button variant="destructive">Back</Button>
+      </NuxtLink>
+      <p class="text-3xl font-bold text-center pb-8">Sign In</p>
+
+      <form @submit.prevent="submit">
+        <!-- Email Address -->
+        <div>
+          <Label class="text-gray-500" for="email">Email</Label>
+          <Input
+            id="email"
+            type="email"
+            class="block mt-1 w-full"
+            v-model="data.email"
+            :errors="errors.email?.[0]"
+            required
+            autoFocus
+          />
+        </div>
+
+        <!-- Password -->
+        <div class="mt-4">
+          <Label class="text-gray-500" for="password">Password</Label>
+          <Input
+            id="password"
+            type="password"
+            class="block mt-1 w-full"
+            v-model="data.password"
+            :errors="errors.password"
+            required
+            autoComplete="current-password"
+          />
+        </div>
+
+        <!-- Remember Me -->
+        <div class="block mt-4">
+          <label for="remember" class="inline-flex items-center">
+            <input
+              id="remember"
+              type="checkbox"
+              name="remember"
+              class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              v-model="data.remember"
+            />
+            <span class="ml-2 text-sm text-gray-600"> Remember me </span>
+          </label>
+        </div>
+
+        <div class="flex items-center justify-end mt-4">
+          <NuxtLink
+            href="/forgot-password"
+            class="underline text-sm text-gray-600 hover:text-gray-900"
+          >
+            Forgot your password?
+          </NuxtLink>
+
+<!--          <Button variant="default" class="ml-3" :disabled="inProgress">Login</Button>-->
+          <NuxtLink to="/dashboard" class="ml-3"><Button>Login</Button></NuxtLink>
+        </div>
+      </form>
+    </Card>
+  </div>
+</template>
+
 <script setup lang="ts">
 import {Card} from "~/components/ui/card";
 import {Button} from "~/components/ui/button";
@@ -10,8 +82,8 @@ const route = useRoute();
 const { login } = useAuth();
 
 const data = reactive({
-  email: "admin@mail.com",
-  password: "admin1234",
+  email: "admin@email.com",
+  password: "password",
   remember: false,
 });
 const status = ref(
@@ -32,77 +104,3 @@ const {
   }
 );
 </script>
-
-<template>
-    <Head>
-        <Title>POS - Login</Title>
-    </Head>
-  <div class="p-5 sm:w-auto max-w-xl m-auto">
-      <Card class="w-full p-10 mt-40">
-          <!-- Session Status -->
-          <AuthSessionStatus class="mb-4" :status="status" />
-          <NuxtLink to="/">
-              <Button variant="destructive">Back</Button>
-          </NuxtLink>
-          <p class="text-3xl font-bold text-center pb-8">Sign In</p>
-
-          <form @submit.prevent="submit">
-              <!-- Email Address -->
-              <div>
-                  <Label class="text-gray-500" for="email">Email</Label>
-                  <Input
-                      id="email"
-                      type="email"
-                      class="block mt-1 w-full"
-                      v-model="data.email"
-                      :errors="errors.email?.[0]"
-                      required
-                      autoFocus
-                  />
-              </div>
-
-              <!-- Password -->
-              <div class="mt-4">
-                  <Label class="text-gray-500" for="password">Password</Label>
-                  <Input
-                      id="password"
-                      type="password"
-                      class="block mt-1 w-full"
-                      v-model="data.password"
-                      :errors="errors.password"
-                      required
-                      autoComplete="current-password"
-                  />
-              </div>
-
-              <!-- Remember Me -->
-              <div class="block mt-4">
-                  <label for="remember" class="inline-flex items-center">
-                      <input
-                          id="remember"
-                          type="checkbox"
-                          name="remember"
-                          class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                          v-model="data.remember"
-                      />
-                      <span class="ml-2 text-sm text-gray-600"> Remember me </span>
-                  </label>
-              </div>
-
-              <div class="flex items-center justify-end mt-4">
-                  <NuxtLink
-                      href="/forgot-password"
-                      class="underline text-sm text-gray-600 hover:text-gray-900"
-                  >
-                      Forgot your password?
-                  </NuxtLink>
-
-<!--                  <Button variant="default" class="ml-3" :disabled="inProgress">Login</Button>-->
-                  <NuxtLink to="/dashboard">
-                      <Button variant="default" class="ml-3" >Login</Button>
-                  </NuxtLink>
-              </div>
-          </form>
-      </Card>
-  </div>
-</template>

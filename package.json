@@ -1,11 +1,6 @@
 {
     "scripts": {
-        "dev": "concurrently --names 'POS' --prefix-colors 'orange,green' --kill-others 'cd client/ && bun dev --host' 'php artisan serve'"
-    },
-    "devDependencies": {
-        "@nuxtjs/color-mode": "^3.4.1"
-    },
-    "dependencies": {
-        "@nuxt/image": "^1.7.0"
+        "dev": "concurrently --names 'POS' --prefix-colors 'orange,green' --kill-others 'cd client/ && bun dev --host' 'php artisan serve'",
+        "serve": "concurrently --names 'POS' --prefix-colors 'orange,green' --kill-others 'cd client/ && bun dev --host' 'php artisan serve --host 192.168.254.195 --port 8000'"
     }
 }
