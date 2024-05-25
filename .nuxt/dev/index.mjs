@@ -105,8 +105,8 @@ const _inlineRuntimeConfig = {
     }
   },
   "public": {
-    "backendUrl": "http://localhost:8000",
-    "frontendUrl": "http://localhost:3000"
+    "backendUrl": "https://posnuxtbackend.freshfromuspng.com",
+    "frontendUrl": "https://posnuxt.vercel.app"
   },
   "ipx": {
     "baseURL": "/_ipx",
