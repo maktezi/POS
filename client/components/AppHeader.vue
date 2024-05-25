@@ -44,7 +44,7 @@
 <!--              Logout-->
 <!--            </DropdownButton>-->
             <DropdownButton>
-              <NuxtLink to="/">Logout</NuxtLink>
+              <a href="/">Logout</a>
             </DropdownButton>
           </Dropdown>
           <TooltipProvider>

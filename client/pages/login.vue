@@ -63,7 +63,7 @@
           </NuxtLink>
 
 <!--          <Button variant="default" class="ml-3" :disabled="inProgress">Login</Button>-->
-          <NuxtLink to="/dashboard" class="ml-3"><Button>Login</Button></NuxtLink>
+          <a href="/dashboard" class="ml-3 bg-black dark:bg-gray-200 text-white dark:text-black px-4 py-2 rounded">Login</a>
         </div>
       </form>
     </Card>
