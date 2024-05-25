@@ -8,7 +8,7 @@
       <div>
         <p class="text-3xl font-bold">Dashboard</p>
       </div>
-      <Card class="px-2 py-5 mt-6 w-sm">
+      <Card class="px-2 py-5 mt-6 w-96 flex m-auto">
         <div class="flex flex-col">
           <p>Total Sales</p>
           <div class="p-3">
@@ -22,4 +22,5 @@
 
 <script setup lang="ts">
 // definePageMeta({ middleware: ["auth"] });
+import {Card} from "~/components/ui/card";
 </script>

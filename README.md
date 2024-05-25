@@ -24,21 +24,12 @@ php artisan migrate:fresh
 php artisan db:seed
 ```
 
-### 5. Goto client directory then install npm or bun
+### 5. Then install npm
 ```
-cd client
-
-&
-
 npm install
 ```
 
-### 6. Go back to the POS directory
+### 6. Then run the server
 ```
-cd ..
-```
-
-### 7. Then run the server
-```
- npm dev
+ npm serve
 ```

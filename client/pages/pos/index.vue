@@ -19,6 +19,7 @@ import CartHeader from "~/components/pos/CartHeader.vue";
 import CartTable from "~/components/pos/CartTable.vue";
 import CartTotal from "~/components/pos/CartTotal.vue";
 import CartAction from "~/components/pos/CartAction.vue";
+import {Card} from "~/components/ui/card";
 
 const products = [
   {
