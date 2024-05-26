@@ -2,6 +2,7 @@ import { defineNuxtConfig } from "nuxt/config";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  srcDir: 'client/',
   devtools: { enabled: true },
   future: { typescriptBundlerResolution: false },
   app: {
@@ -10,7 +11,6 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/png', href: '_nuxt/assets/application_logo.svg' }]
     }
   },
-  srcDir: 'client/',
   modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", '@nuxtjs/color-mode', "@nuxt/image", 'nuxt-icon'],
   colorMode: {
     classSuffix: ''
