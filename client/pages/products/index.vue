@@ -71,6 +71,7 @@ import {
   TableHeader,
   TableRow,
 } from '~/components/ui/table'
+import {Card} from "~/components/ui/card";
 
 const products = [
   {

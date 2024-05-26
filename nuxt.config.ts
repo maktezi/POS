@@ -21,10 +21,10 @@ export default defineNuxtConfig({
   // },
   runtimeConfig: {
     public: {
-      // backendUrl: "http://localhost:8000",
-      // frontendUrl: "http://localhost:3000",
-      backendUrl: "https://posnuxtbackend.freshfromuspng.com",
-      frontendUrl: "https://posnuxt.vercel.app",
+      backendUrl: "http://localhost:8000",
+      frontendUrl: "http://localhost:3000",
+      // backendUrl: "https://posnuxtbackend.freshfromuspng.com",
+      // frontendUrl: "https://posnuxt.vercel.app",
     },
   },
   imports: { dirs: ['./utils", ./stores', './composables/*/*.{ts,js}'] },

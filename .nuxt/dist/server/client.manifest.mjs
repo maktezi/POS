@@ -1,1 +1,0 @@
-export { default } from "file:///home/mak/Documents/POS/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
