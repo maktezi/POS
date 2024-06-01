@@ -9,11 +9,9 @@
 6. [Code Reviews](#code-reviews)
 
 ## General Guidelines
-- Use **4 spaces** for indentation, not tabs.
 - Write meaningful comments and keep them up to date.
 - Follow naming conventions consistently.
 - Ensure your code is clean and readable.
-- Run linters and formatters before committing code.
 
 ## Nuxt.js
 ### Project Structure
