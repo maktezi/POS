@@ -4,7 +4,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "serve": "concurrently --names 'POS' --prefix-colors 'orange,green' --kill-others 'php artisan serve' 'nuxi dev'",
-  "generate": "nuxt generate",
+    "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
   "devDependencies": {
@@ -36,6 +36,7 @@
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
     "vaul-vue": "^0.1.2",
-    "vue3-apexcharts": "^1.5.2"
+    "vue3-apexcharts": "^1.5.2",
+    "vue3-toastify": "^0.2.1"
   }
 }
