@@ -1,19 +1,31 @@
+import { toast } from 'vue3-toastify';
+import 'vue3-toastify/dist/index.css';
+
+function showToast(message: string, type: any) {
+  toast(message, {
+    autoClose: 2000,
+    theme: "auto",
+    type: type,
+    transition: "slide"
+  });
+}
+
 export function deleteCartItem() {
-  alert("Successfully Deleted!")
+  showToast("Successfully Deleted!", "error");
 }
 
 export function cartClear() {
-  alert("Cart cleared!")
+  showToast("Cart cleared!", "error");
 }
 
 export function paymentSelect() {
-  alert("Successfully Paid!")
+  showToast("Successfully Paid!", "info");
 }
 
 export function addProductToCart() {
-  alert("Successfully Added")
+  showToast("Added Item!", "success");
 }
 
 export function removeProductToCart() {
-  alert("Successfully Removed")
+  showToast("Item Removed!", "warning");
 }
